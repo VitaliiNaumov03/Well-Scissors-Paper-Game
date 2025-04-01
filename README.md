@@ -9,6 +9,12 @@ It's like a classic rock-paper-scissors, but with well instead of rock.
 - **Paper** beats **Well** *(it covers it)*
 - If signs are the same, it's a draw
 
+## Modes
+
+- **Random**: computer makes choices randomly
+- **Based on current session**: remembers your moves throughout the current game and makes decisions based on them
+- **Based on all previous sessions**: remembers all your moves for all your games
+
 ## Screenshots
 
 <img src="https://github.com/user-attachments/assets/f74b6ad4-feae-490b-874e-034d71aacfaf" width="500"><br>
