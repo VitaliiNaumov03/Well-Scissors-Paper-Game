@@ -83,7 +83,7 @@ class UI extends JFrame{
         ++gbc.gridy;
         menuPanel.add(statisticsButton, gbc);
 
-        //Введення в поле к-сті раундів тільки цілих додатніх чисел
+        //Якщо поле не пусте, вмикаємо кнопку старту
         textField.getDocument().addDocumentListener(new DocumentListener(){
             @Override
             public void insertUpdate(DocumentEvent e){
@@ -343,7 +343,7 @@ class IntegerFilter extends DocumentFilter{
     public void replace(FilterBypass fb, int offset, int length, String text, AttributeSet attrs) throws BadLocationException{
         String newText = fb.getDocument().getText(0, fb.getDocument().getLength()) + text;
         
-        if (newText.matches("[1-9]\\d*")){ // Только положительные целые числа
+        if (newText.matches("[1-9]\\d*")){ //Тільки додатні цілі числа
             super.replace(fb, offset, length, text, attrs);
         }
     }
