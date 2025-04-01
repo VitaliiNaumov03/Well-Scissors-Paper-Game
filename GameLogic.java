@@ -100,8 +100,6 @@ class GameLogic{
                     case Choices.Paper -> winner = Winners.Draw;
                 }
             }
-
-
         }
 
         return winner;
